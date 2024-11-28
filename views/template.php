@@ -21,6 +21,8 @@ session_start();
     <link rel="stylesheet" href="views/assets/css/app.css">
     <!-- End : Theme CSS-->
     <script src="views/assets/js/settings.js" sync></script>
+    
+    <script src="views/assets/plugins/sweetalert2.js"></script>
 </head>
 
 <body class=" font-inter dashcode-app" id="body_class">
