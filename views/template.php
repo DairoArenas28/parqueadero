@@ -31,8 +31,12 @@ session_start();
             
             if (isset($_GET['ruta'])) {
                 include "components/header.php";
+                include "components/sidebar.php";
                 include "components/settingsmodal.php"; 
-                    if ($_GET['ruta'] == "dashboard") {
+                    if (
+                    $_GET['ruta'] == "dashboard" ||
+                    $_GET['ruta'] == "user"
+                    ) {
                         include "models/" . $_GET['ruta'] . ".php";
                     }
                     if ($_GET['ruta'] == "close") {

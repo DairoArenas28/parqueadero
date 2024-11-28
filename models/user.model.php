@@ -9,5 +9,11 @@ class UserModel
         $stmt->bindParam(":password", $password, PDO::PARAM_STR);
         $stmt->execute();
         return $stmt->fetch();
+    } 
+
+    static public function getUserAllMdl(){
+        $stmt = Connection::On()->prepare("SELECT * FROM user");
+        $stmt->execute();
+        return $stmt->fetchAll();
     }
 }

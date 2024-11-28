@@ -24,4 +24,9 @@ class UserController
             }
         }
     }
+
+    static public function getUserAllCtr(){
+        $result = UserModel::getUserAllMdl();
+        return $result;
+    }
 }
