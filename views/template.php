@@ -35,6 +35,9 @@ session_start();
                     if ($_GET['ruta'] == "dashboard") {
                         include "models/" . $_GET['ruta'] . ".php";
                     }
+                    if ($_GET['ruta'] == "close") {
+                        include "action/" . $_GET['ruta'] . ".php";
+                    }
                 include "components/footer.php";
                 include "components/footer-flex.php";
                 
@@ -44,7 +47,13 @@ session_start();
                 include "action/" . $_GET['ruta'] . ".php";
             }*/
         } else {
-            include "models/login.php";
+            if (isset($_GET['ruta'])) {
+                if ($_GET['ruta'] == "login") {
+                    include "models/login.php";
+                }
+            } else {
+                include "models/login.php";
+            }
         }
         ?>
     </main>
