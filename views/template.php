@@ -21,8 +21,14 @@ session_start();
     <link rel="stylesheet" href="views/assets/css/app.css">
     <!-- End : Theme CSS-->
     <script src="views/assets/js/settings.js" sync></script>
+
+    <!-- scripts -->
     
-    <script src="views/assets/plugins/sweetalert2.js"></script>
+
+    <script src="views/assets/plugins/sweetalert2.all.js"></script>
+    
+    
+    
 </head>
 
 <body class=" font-inter dashcode-app" id="body_class">
@@ -63,7 +69,6 @@ session_start();
         }
         ?>
     </main>
-    <!-- scripts -->
     <script src="views/assets/js/jquery-3.6.0.min.js"></script>
     <script src="views/assets/js/rt-plugins.js"></script>
     <script src="views/assets/js/app.js"></script>

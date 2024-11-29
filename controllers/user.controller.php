@@ -43,8 +43,8 @@ class UserController
             );
 
             $result = UserModel::putUserMdl($data);
-
-            if($result){
+            
+            if($result == true){
                 echo '<script>
 					swal({
 						type: "success",
@@ -54,8 +54,11 @@ class UserController
 					}).then(function(result){
 						if(result.value){
 							window.location = "user";
+                        }
 					});
 					</script>';
+
+                    
             } else {
                 echo '<script>
                 swal({
@@ -71,5 +74,19 @@ class UserController
                 </script>';
             }
         }
+    }
+
+    static public function updateUserCtr(){
+        if(isset($_POST['username'])){
+            $data = array(
+                'username'=> $_POST['username'],
+                'email'=> $_POST['email'],
+                'password'=> $_POST['password'],
+            );
+        }
+    }
+
+    static public function deleteUserCtr(){
+
     }
 }

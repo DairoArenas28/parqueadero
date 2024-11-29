@@ -28,4 +28,22 @@ class UserModel
             return false;
         }
     }
+
+    static public function updateUserMdl($id,$data){
+        $stmt = Connection::On()->prepare('UPDATE user SET username = :username, email = :email, password = :password WHERE id = :id');
+        $stmt->bindParam(':id',$id, PDO::PARAM_INT);
+        $stmt->bindParam(':username',$data['username'], PDO::PARAM_STR);
+        $stmt->bindParam(':email',$data['email'], PDO::PARAM_STR);
+        $stmt->bindParam(':password',$data['password'], PDO::PARAM_STR);
+
+        if($stmt->execute()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    static public function deleteUserMdl(){
+
+    }
 }

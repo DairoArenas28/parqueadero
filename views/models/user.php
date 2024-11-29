@@ -40,97 +40,6 @@
                             </button>
                         </div>
 
-                        <!-- Modal -->
-                        <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="basic_modal" tabindex="-1" aria-labelledby="basic_modal" aria-hidden="true">
-                            <div class="modal-dialog relative w-auto pointer-events-none max-w-lg mx-auto">
-                                <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white rounded-lg outline-none text-current dark:bg-slate-800">
-                                    <!-- Modal header -->
-                                    <div class="flex items-center justify-between p-4 border-b dark:border-slate-700 bg-blue-500 rounded-t">
-                                        <h3 class="text-lg font-medium text-white capitalize">
-                                            Stylish Modal with Form
-                                        </h3>
-                                        <button
-                                            type="button"
-                                            class="text-white bg-transparent hover:text-slate-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-600"
-                                            data-bs-dismiss="modal">
-                                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                            </svg>
-                                            <span class="sr-only">Close modal</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- Modal body -->
-                                    <div class="p-6 space-y-4">
-                                        <form method="POST" id="modalForm" class="space-y-6">
-                                            <!-- Campo Full Name -->
-                                            <div class="input-area relative">
-                                                <label for="largeInput" class="form-label">User Name</label>
-                                                <div class="relative">
-                                                    <input type="text" name="username" class="form-control !pl-9" placeholder="User Name">
-                                                    <iconify-icon icon="heroicons-outline:user" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
-                                                </div>
-                                            </div>
-
-                                            <div class="input-area relative">
-                                                <label for="largeInput" class="form-label">Email</label>
-                                                <div class="relative">
-                                                    <input type="email" name="email" class="form-control !pl-9" placeholder="Your Email">
-                                                    <iconify-icon icon="heroicons-outline:mail" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
-                                                </div>
-                                            </div>
-                                            <div class="input-area relative">
-                                                <label for="largeInput" class="form-label">Phone</label>
-                                                <div class="relative">
-                                                    <input type="tel" class="form-control !pl-9" placeholder="Phone Number" pattern="[0-9]">
-                                                    <iconify-icon icon="heroicons-outline:phone" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
-                                                </div>
-                                            </div>
-                                            <div class="input-area relative">
-                                                <label for="largeInput" class="form-label">Password</label>
-                                                <div class="relative">
-                                                    <input type="tel" name="password" class="form-control !pl-9" placeholder="8+ characters, 1 capitat letter">
-                                                    <iconify-icon icon="heroicons-outline:lock-closed" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
-                                                </div>
-                                            </div>
-                                            <div class="checkbox-area">
-                                                <label class="inline-flex items-center cursor-pointer">
-                                                    <input type="checkbox" class="hidden" name="checkbox">
-                                                    <span class="h-4 w-4 border flex-none border-slate-100 dark:border-slate-800 rounded inline-flex ltr:mr-3 rtl:ml-3 relative
-                                        transition-all duration-150 bg-slate-100 dark:bg-slate-900">
-                                                        <img src="assets/images/icon/ck-white.svg" alt="checkbox" class="h-[10px] w-[10px] block m-auto opacity-0">
-                                                    </span>
-                                                    <span class="text-slate-500 dark:text-slate-400 text-sm leading-6">Remember me</span>
-                                                </label>
-                                            </div>
-                                            <?php 
-                                                $putuser = new UserController();
-                                                $putuser->putUserCtr();
-                                            ?>
-                                        </form>
-                                    </div>
-
-                                    <!-- Modal footer -->
-                                    <div class="flex items-center justify-end p-4 border-t dark:border-slate-700">
-                                        <button
-                                            data-bs-dismiss="modal"
-                                            class="btn ml-2 px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                                            Close
-                                        </button>
-                                        <button
-                                            type="submit"
-                                            form="modalForm"
-                                            class="btn ml-2 px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                                            Submit
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
                         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="vertically_center" tabindex="-1" aria-labelledby="vertically_center" aria-hidden="true">
                             <div class="modal-dialog top-1/2 !-translate-y-1/2 relative w-auto pointer-events-none">
                                 <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding
@@ -196,9 +105,6 @@
                                                 </th>
 
                                                 <th scope="col" class=" table-th ">
-                                                    Created in
-                                                </th>
-                                                <th scope="col" class=" table-th ">
                                                     Action
                                                 </th>
                                             </tr>
@@ -218,13 +124,12 @@
                                                 <td class="table-td ">' . $value["username"] . '</td>
                                                 <td class="table-td ">' . $value["email"] . '</td>
                                                 <td class="table-td ">' . $value["password"] . '</td>
-                                                <td class="table-td ">' . $value["Timestamp"] . '</td>
                                                 <td class="table-td">
-                                                    <button  class="btn inline-flex justify-center btn-primary btn-sm">
-                                                        Editar
+                                                    <button data-bs-toggle="modal" data-bs-target="#update_modal"  class="btn inline-flex justify-center btn-primary btn-sm">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 21h18"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="48" stroke-dashoffset="48" d="M7 17v-4l10 -10l4 4l-10 10h-4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.6s" values="48;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M14 6l4 4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="8;0"/></path></g></svg>
                                                     </button>
-                                                    <button  class="btn inline-flex justify-center btn-primary btn-sm">
-                                                        Eliminar
+                                                    <button username="' . $value["username"] . '"g" class="btn inline-flex justify-center btn-danger btn-sm">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 12H19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 12H19;M12 12H12"/><set fill="freeze" attributeName="opacity" begin="0.4s" to="0"/></path><path d="M5 5L19 5M5 19L19 19" opacity="0"><animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s" values="M5 5L19 5M5 19L19 19;M5 5L19 19M5 19L19 5"/><set fill="freeze" attributeName="opacity" begin="0.2s" to="1"/></path></g></svg>
                                                     </button>
                                                 </td>
                                                 
@@ -239,6 +144,186 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Ingresar Usuarios -->
+<!-- Modal -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="basic_modal" tabindex="-1" aria-labelledby="basic_modal" aria-hidden="true">
+    <div class="modal-dialog relative w-auto pointer-events-none max-w-lg mx-auto">
+        <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white rounded-lg outline-none text-current dark:bg-slate-800">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 border-b dark:border-slate-700 bg-blue-500 rounded-t">
+                <h3 class="text-lg font-medium text-white capitalize">
+                    Stylish Modal with Form
+                </h3>
+                <button
+                    type="button"
+                    class="text-white bg-transparent hover:text-slate-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-600"
+                    data-bs-dismiss="modal">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="p-6 space-y-4">
+                <form method="POST" id="modalForm" class="space-y-6">
+                    <!-- Campo Full Name -->
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">User Name</label>
+                        <div class="relative">
+                            <input type="text" name="username" class="form-control !pl-9" placeholder="User Name">
+                            <iconify-icon icon="heroicons-outline:user" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">Email</label>
+                        <div class="relative">
+                            <input type="email" name="email" class="form-control !pl-9" placeholder="Your Email">
+                            <iconify-icon icon="heroicons-outline:mail" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">Phone</label>
+                        <div class="relative">
+                            <input type="tel" class="form-control !pl-9" placeholder="Phone Number" pattern="[0-9]">
+                            <iconify-icon icon="heroicons-outline:phone" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">Password</label>
+                        <div class="relative">
+                            <input type="tel" name="password" class="form-control !pl-9" placeholder="8+ characters, 1 capitat letter">
+                            <iconify-icon icon="heroicons-outline:lock-closed" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="checkbox-area">
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="hidden" name="checkbox">
+                            <span class="h-4 w-4 border flex-none border-slate-100 dark:border-slate-800 rounded inline-flex ltr:mr-3 rtl:ml-3 relative
+                                        transition-all duration-150 bg-slate-100 dark:bg-slate-900">
+                                <img src="assets/images/icon/ck-white.svg" alt="checkbox" class="h-[10px] w-[10px] block m-auto opacity-0">
+                            </span>
+                            <span class="text-slate-500 dark:text-slate-400 text-sm leading-6">Remember me</span>
+                        </label>
+                    </div>
+                    <?php
+                    $putuser = new UserController();
+                    $putuser->putUserCtr();
+                    ?>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="flex items-center justify-end p-4 border-t dark:border-slate-700">
+                <button
+                    data-bs-dismiss="modal"
+                    class="btn ml-2 px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                    Close
+                </button>
+                <button
+                    type="submit"
+                    form="modalForm"
+                    class="btn ml-2 px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Actualizar Usuarios -->
+<!-- Modal -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="update_modal" tabindex="-1" aria-labelledby="update_modal" aria-hidden="true">
+    <div class="modal-dialog relative w-auto pointer-events-none max-w-lg mx-auto">
+        <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white rounded-lg outline-none text-current dark:bg-slate-800">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 border-b dark:border-slate-700 bg-blue-500 rounded-t">
+                <h3 class="text-lg font-medium text-white capitalize">
+                    Edit User
+                </h3>
+                <button
+                    type="button"
+                    class="text-white bg-transparent hover:text-slate-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-600"
+                    data-bs-dismiss="modal">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="p-6 space-y-4">
+                <form method="POST" id="modalForm" class="space-y-6">
+                    <!-- Campo Full Name -->
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">User Name</label>
+                        <div class="relative">
+                            <input type="text" name="username" class="form-control !pl-9" placeholder="User Name">
+                            <iconify-icon icon="heroicons-outline:user" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">Email</label>
+                        <div class="relative">
+                            <input type="email" name="email" class="form-control !pl-9" placeholder="Your Email">
+                            <iconify-icon icon="heroicons-outline:mail" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">Phone</label>
+                        <div class="relative">
+                            <input type="tel" class="form-control !pl-9" placeholder="Phone Number" pattern="[0-9]">
+                            <iconify-icon icon="heroicons-outline:phone" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="input-area relative">
+                        <label for="largeInput" class="form-label">Password</label>
+                        <div class="relative">
+                            <input type="tel" name="password" class="form-control !pl-9" placeholder="8+ characters, 1 capitat letter">
+                            <iconify-icon icon="heroicons-outline:lock-closed" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="checkbox-area">
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="hidden" name="checkbox">
+                            <span class="h-4 w-4 border flex-none border-slate-100 dark:border-slate-800 rounded inline-flex ltr:mr-3 rtl:ml-3 relative
+                                        transition-all duration-150 bg-slate-100 dark:bg-slate-900">
+                                <img src="assets/images/icon/ck-white.svg" alt="checkbox" class="h-[10px] w-[10px] block m-auto opacity-0">
+                            </span>
+                            <span class="text-slate-500 dark:text-slate-400 text-sm leading-6">Remember me</span>
+                        </label>
+                    </div>
+                    <?php
+                    $putuser = new UserController();
+                    $putuser->putUserCtr();
+                    ?>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="flex items-center justify-end p-4 border-t dark:border-slate-700">
+                <button
+                    data-bs-dismiss="modal"
+                    class="btn ml-2 px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                    Close
+                </button>
+                <button
+                    type="submit"
+                    form="modalForm"
+                    class="btn ml-2 px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md shadow-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                    Submit
+                </button>
             </div>
         </div>
     </div>
