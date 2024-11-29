@@ -72,6 +72,7 @@ session_start();
     <script src="views/assets/js/jquery-3.6.0.min.js"></script>
     <script src="views/assets/js/rt-plugins.js"></script>
     <script src="views/assets/js/app.js"></script>
+    <script src="views/assets/ajax/user.js"></script>
 </body>
 
 </html>

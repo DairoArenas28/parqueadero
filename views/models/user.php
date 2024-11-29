@@ -125,7 +125,7 @@
                                                 <td class="table-td ">' . $value["email"] . '</td>
                                                 <td class="table-td ">' . $value["password"] . '</td>
                                                 <td class="table-td">
-                                                    <button data-bs-toggle="modal" data-bs-target="#update_modal"  class="btn inline-flex justify-center btn-primary btn-sm">
+                                                    <button id="editButton" idUser="' . $value["id"] . '" data-bs-toggle="modal" data-bs-target="#update_modal"  class="btn inline-flex justify-center btn-primary btn-sm">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 21h18"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="48" stroke-dashoffset="48" d="M7 17v-4l10 -10l4 4l-10 10h-4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.6s" values="48;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M14 6l4 4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="8;0"/></path></g></svg>
                                                     </button>
                                                     <button username="' . $value["username"] . '"g" class="btn inline-flex justify-center btn-danger btn-sm">
@@ -268,7 +268,7 @@
                     <div class="input-area relative">
                         <label for="largeInput" class="form-label">User Name</label>
                         <div class="relative">
-                            <input type="text" name="username" class="form-control !pl-9" placeholder="User Name">
+                            <input id="editUsername" type="text" name="username" class="form-control !pl-9" placeholder="User Name">
                             <iconify-icon icon="heroicons-outline:user" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                     <div class="input-area relative">
                         <label for="largeInput" class="form-label">Email</label>
                         <div class="relative">
-                            <input type="email" name="email" class="form-control !pl-9" placeholder="Your Email">
+                            <input id="editEmail" type="email" name="email" class="form-control !pl-9" placeholder="Your Email">
                             <iconify-icon icon="heroicons-outline:mail" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
                         </div>
                     </div>
@@ -290,11 +290,11 @@
                     <div class="input-area relative">
                         <label for="largeInput" class="form-label">Password</label>
                         <div class="relative">
-                            <input type="tel" name="password" class="form-control !pl-9" placeholder="8+ characters, 1 capitat letter">
+                            <input id="editPassword" type="tel" name="password" class="form-control !pl-9" placeholder="8+ characters, 1 capitat letter">
                             <iconify-icon icon="heroicons-outline:lock-closed" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
                         </div>
                     </div>
-                    <div class="checkbox-area">
+                    <!--<div class="checkbox-area">
                         <label class="inline-flex items-center cursor-pointer">
                             <input type="checkbox" class="hidden" name="checkbox">
                             <span class="h-4 w-4 border flex-none border-slate-100 dark:border-slate-800 rounded inline-flex ltr:mr-3 rtl:ml-3 relative
@@ -303,10 +303,10 @@
                             </span>
                             <span class="text-slate-500 dark:text-slate-400 text-sm leading-6">Remember me</span>
                         </label>
-                    </div>
+                    </div>-->
                     <?php
-                    $putuser = new UserController();
-                    $putuser->putUserCtr();
+                        $putuser = new UserController();
+                        $putuser->updateUserCtr();
                     ?>
                 </form>
             </div>
