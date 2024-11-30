@@ -143,11 +143,13 @@ class UserController
     }
 
     static public function updateUserCtr(){
-        if(isset($_POST['username'])){
+        if(isset($_POST['editUsername'])){
+            $passcrypt = crypt($_POST['editPassword'],'$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
             $data = array(
-                'username'=> $_POST['username'],
-                'email'=> $_POST['email'],
-                'password'=> $_POST['password'],
+                'id' => $_POST['editId'],
+                'username'=> $_POST['editUsername'],
+                'email'=> $_POST['editEmail'],
+                'password'=> $passcrypt,
             );
             $result = UserModel::updateUserMdl($data);
 

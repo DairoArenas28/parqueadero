@@ -14,6 +14,7 @@ $('#data-table').on("click", "#editButton", function () {
         success: function (result) {
             // Validar que el resultado contenga los datos esperados
             if (result && result.username) {
+                $('#editId').val(result.id);
                 $('#editUsername').val(result.username);
                 // Agrega más campos según sea necesario
                 $('#editEmail').val(result.email);

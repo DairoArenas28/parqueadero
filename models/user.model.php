@@ -42,10 +42,11 @@ class UserModel
     }
 
     static public function updateUserMdl($data){
-        $stmt = Connection::On()->prepare('UPDATE user SET username = :username, email = :email, password = :password WHERE username = :username');
+        $stmt = Connection::On()->prepare('UPDATE user SET username = :username, email = :email, password = :password WHERE id = :id');
         $stmt->bindParam(':username',$data['username'], PDO::PARAM_STR);
         $stmt->bindParam(':email',$data['email'], PDO::PARAM_STR);
         $stmt->bindParam(':password',$data['password'], PDO::PARAM_STR);
+        $stmt->bindParam(':id',$data['id'], PDO::PARAM_STR);
 
         if($stmt->execute()){
             return true;

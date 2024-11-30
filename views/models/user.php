@@ -266,9 +266,17 @@
                 <form method="POST" id="modalForm" class="space-y-6">
                     <!-- Campo Full Name -->
                     <div class="input-area relative">
+                        <label for="largeInput" class="form-label">Id</label>
+                        <div class="relative">
+                            <input id="editId" type="text" name="editId" class="form-control !pl-9" disabled placeholder="User Name">
+                            <iconify-icon icon="heroicons-outline:user" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div class="input-area relative">
                         <label for="largeInput" class="form-label">User Name</label>
                         <div class="relative">
-                            <input id="editUsername" type="text" name="username" class="form-control !pl-9" placeholder="User Name">
+                            <input id="editUsername" type="text" name="editUsername" class="form-control !pl-9" placeholder="User Name">
                             <iconify-icon icon="heroicons-outline:user" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
                         </div>
                     </div>
@@ -276,7 +284,7 @@
                     <div class="input-area relative">
                         <label for="largeInput" class="form-label">Email</label>
                         <div class="relative">
-                            <input id="editEmail" type="email" name="email" class="form-control !pl-9" placeholder="Your Email">
+                            <input id="editEmail" type="email" name="editEmail" class="form-control !pl-9" placeholder="Your Email">
                             <iconify-icon icon="heroicons-outline:mail" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
                         </div>
                     </div>
@@ -290,7 +298,7 @@
                     <div class="input-area relative">
                         <label for="largeInput" class="form-label">Password</label>
                         <div class="relative">
-                            <input id="editPassword" type="tel" name="password" class="form-control !pl-9" placeholder="8+ characters, 1 capitat letter">
+                            <input id="editPassword" type="tel" name="editPassword" class="form-control !pl-9" placeholder="8+ characters, 1 capitat letter">
                             <iconify-icon icon="heroicons-outline:lock-closed" class="absolute left-2 top-1/2 -translate-y-1/2 text-base text-slate-500"></iconify-icon>
                         </div>
                     </div>
